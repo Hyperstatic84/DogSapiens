@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génération Dog-Sapiens | Éduquer pour une cohabitation harmonieuse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lexend:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Lexend', sans-serif;
+        }
+        /* Classe réutilisable pour l'image de fond */
+        .hero-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-dog text-orange-600 text-2xl"></i>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">Dog-Sapiens</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#niveaux" class="hover:text-orange-600 transition">Niveaux Scolaires</a>
+                    <a href="#pedagogie" class="hover:text-orange-600 transition">Contenu</a>
+                    <a href="#methode" class="hover:text-orange-600 transition">Méthodologie</a>
+                    <a href="#impact" class="hover:text-orange-600 transition">Pourquoi ?</a>
+                </div>
+                <a href="#contact" class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-700 transition shadow-lg shadow-orange-200">
+                    Me Contacter
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec image de fond -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                Génération <span class="text-orange-600 text-opacity-90">Dog-Sapiens</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-700 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+                Comprendre le langage canin pour une cohabitation harmonieuse et sécurisée. Une éducation bienveillante pour les citoyens de demain.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#niveaux" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-xl">Découvrir le programme</a>
+                <a href="#impact" class="bg-white/80 backdrop-blur-sm border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold hover:border-orange-200 hover:bg-orange-50 transition">L'enjeu de sécurité</a>
+            </div>
+        </div>
+        <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-orange-100/50 rounded-full blur-3xl opacity-50"></div>
+    </header>
+
+    <!-- 1. Structure par niveau scolaire -->
+    <section id="niveaux" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Un parcours adapté à chaque âge</h2>
+            <p class="text-slate-500 max-w-xl mx-auto mb-4">La maturité des élèves est au cœur de ma pédagogie pour assurer une assimilation efficace des concepts.</p>
+            <p class="text-orange-600 text-sm italic max-w-2xl mx-auto bg-orange-50 py-2 px-4 rounded-lg inline-block border border-orange-100">
+                Note : Pour les établissements découvrant le programme, toute première intervention en collège ou lycée intègre systématiquement les fondamentaux des parcours précédents.
+            </p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Primaire -->
+            <div class="bg-orange-50 p-8 rounded-3xl border border-orange-100 card-hover">
+                <div class="w-12 h-12 bg-orange-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Primaire (École)</h3>
+                <p class="text-orange-800 font-semibold text-sm mb-4">Objectif : Prévention des morsures</p>
+                <div class="bg-white p-4 rounded-xl mb-4">
+                    <p class="text-xs text-slate-500 uppercase font-bold mb-1">Concept Clé</p>
+                    <p class="text-slate-700 italic">"Que dit le chien quand il lèche sa truffe ou détourne le regard ?"</p>
+                </div>
+                <p class="text-slate-600 text-sm">Apprentissage ludique des signaux d'apaisement pour une sécurité quotidienne.</p>
+            </div>
+
+            <!-- Collège -->
+            <div class="bg-blue-50 p-8 rounded-3xl border border-blue-100 card-hover">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Collège</h3>
+                <p class="text-blue-800 font-semibold text-sm mb-4">Objectif : Éthique et Biologie</p>
+                <div class="bg-white p-4 rounded-xl mb-4">
+                    <p class="text-xs text-slate-500 uppercase font-bold mb-1">Concept Clé</p>
+                    <p class="text-slate-700 italic">La Sentience : Le chien comme être sensible capable d'émotions complexes.</p>
+                </div>
+                <p class="text-slate-600 text-sm">Comprendre la différence entre stress et anxiété et la biologie du comportement.</p>
+            </div>
+
+            <!-- Lycée -->
+            <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100 card-hover">
+                <div class="w-12 h-12 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Lycée</h3>
+                <p class="text-emerald-800 font-semibold text-sm mb-4">Objectif : Responsabilité Civique</p>
+                <div class="bg-white p-4 rounded-xl mb-4">
+                    <p class="text-xs text-slate-500 uppercase font-bold mb-1">Concept Clé</p>
+                    <p class="text-slate-700 italic">L'Ontogenèse et la Génétique : L'impact de l'élevage et du mode de vie.</p>
+                </div>
+                <p class="text-slate-600 text-sm">Sensibilisation au choix d'une race et aux enjeux sociétaux de l'animal en ville.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Contenu Pédagogique -->
+    <section id="pedagogie" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-8">Points forts du programme</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center font-bold text-sm">A</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Décoder la communication "invisible"</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed">Basé sur les travaux de Turid Rugaas. Apprendre que le chien communique bien avant de grogner. Analyse de supports visuels et deconstruction du mythe du "Loup Alpha".</p>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center font-bold text-sm">B</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">La Sentience et le Bien-être</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed">Introduction du concept de "personne physique non-humaine" (Caroline Regad). Étude du budget temps (mastication, exploration, sommeil) et lien microbiote-comportement.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center font-bold text-sm">C</div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Choisir son futur compagnon</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed">Focus Lycée : L'importance cruciale de la socialisation (3-12 semaines). Éthique de l'achat et alignement des besoins de la race avec le mode de vie humain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl">
+                    <div class="aspect-video bg-slate-700 rounded-xl mb-6 flex items-center justify-center text-slate-500 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chien communiquant" class="object-cover w-full h-full opacity-60">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                            <p class="text-white font-bold text-lg mb-2">Analyse de comportement</p>
+                            <p class="text-slate-300 text-xs italic">Support pédagogique exclusif Dog-Sapiens</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Activités d'analyse photos/vidéos interactives</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Fiches techniques sur le microbiote canin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Méthodologie Bienveillante -->
+    <section id="methode" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Une Méthodologie Active</h2>
+            <p class="text-slate-500">L'intervention n'est pas un cours magistral, mais une expérience immersive.</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fas fa-people-arrows"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Ateliers interactifs</h4>
+                <p class="text-slate-600 text-sm italic mb-2">"Le jeu du miroir"</p>
+                <p class="text-slate-500 text-sm">Imiter les postures du chien pour mieux ressentir l'intention derrière le mouvement.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Apprendre à regarder</h4>
+                <p class="text-slate-600 text-sm italic mb-2">Devenir un petit expert</p>
+                <p class="text-slate-500 text-sm">Apprendre à observer attentivement les mimiques et les petits gestes du chien pour mieux deviner ce qu'il ressent.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Supports à emporter</h4>
+                <p class="text-slate-600 text-sm italic mb-2">Le pont vers la famille</p>
+                <p class="text-slate-500 text-sm">Une "check-list de l'ami des chiens" pour éduquer indirectement les parents à la maison.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi cette prestation ? (Impact) avec image de fond -->
+    <section id="impact" class="py-24 border-y border-slate-200 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-900">Pourquoi cette prestation est-elle indispensable ?</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-white">
+                    <h5 class="text-orange-600 font-bold mb-4 flex items-center">
+                        <i class="fas fa-shield-alt mr-2"></i> Sécurité publique
+                    </h5>
+                    <p class="text-slate-600 text-sm">La majorité des accidents surviennent au sein du foyer par méconnaissance des signaux de stress. Former les enfants, c'est protéger les familles.</p>
+                </div>
+                
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-white">
+                    <h5 class="text-blue-600 font-bold mb-4 flex items-center">
+                        <i class="fas fa-heart-broken mr-2"></i> Lutte contre l'abandon
+                    </h5>
+                    <p class="text-slate-600 text-sm">Un chien bien choisi et compris est un chien qui restera dans sa famille toute sa vie. La connaissance réduit les frustrations mutuelles.</p>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-white">
+                    <h5 class="text-emerald-600 font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe-africa mr-2"></i> Éducation citoyenne
+                    </h5>
+                    <p class="text-slate-600 text-sm">Développer l'empathie envers une autre espèce renforce le respect d'autrui en général. Le chien est un formidable vecteur de lien social.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="py-20 bg-orange-600 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 text-white">
+            <h2 class="text-4xl font-bold mb-6">Prêt à sensibiliser vos élèves ?</h2>
+            <p class="text-orange-100 mb-10 text-lg">Contactez moi pour organiser une session "Génération Dog-Sapiens" dans votre établissement.</p>
+            <div id="contact-success" class="hidden mb-6 p-4 bg-orange-500 border border-orange-400 rounded-xl animate-bounce">
+                Merci ! Je reviendrai vers vous très prochainement.
+            </div>
+            <form id="simple-contact" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                <input type="email" placeholder="ink.leblanc@gmail.com" class="flex-grow px-6 py-4 rounded-xl text-slate-800 focus:outline-none focus:ring-2 focus:ring-white" required>
+                <button type="submit" class="bg-white text-orange-600 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition shadow-xl">
+                    S'inscrire
+                </button>
+            </form>
+        </div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <i class="fas fa-dog text-orange-600"></i>
+                <span class="font-bold text-slate-900">Génération Dog-Sapiens</span>
+            </div>
+            <p>&copy; 2026 Thomas Le Blanc</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-orange-600"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-orange-600"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-orange-600"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('simple-contact').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('contact-success').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
