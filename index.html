@@ -52,7 +52,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section avec image de fond -->
+    <!-- Hero Section -->
     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden hero-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <!-- Pourquoi cette prestation ? (Impact) avec image de fond -->
+    <!-- Pourquoi ? -->
     <section id="impact" class="py-24 border-y border-slate-200 hero-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 class="text-3xl font-bold text-center mb-16 text-slate-900">Pourquoi cette prestation est-elle indispensable ?</h2>
@@ -249,27 +249,41 @@
     <section id="contact" class="py-20 bg-orange-600 relative overflow-hidden">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 text-white">
             <h2 class="text-4xl font-bold mb-6">Prêt à sensibiliser vos élèves ?</h2>
-            <p class="text-orange-100 mb-10 text-lg">Contactez moi pour organiser une session "Génération Dog-Sapiens" dans votre établissement.</p>
-            <div id="contact-success" class="hidden mb-6 p-4 bg-orange-500 border border-orange-400 rounded-xl animate-bounce">
-                Merci ! Je reviendrai vers vous très prochainement.
+            <p class="text-orange-100 mb-12 text-lg">Contactez moi par mail ou par téléphone pour organiser une session "Génération Dog-Sapiens" dans votre établissement.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <!-- Bloc Mail -->
+                <div class="w-full md:w-auto p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 transition hover:bg-white/20">
+                    <p class="text-xs uppercase font-bold tracking-widest text-orange-200 mb-2">E-mail</p>
+                    <a href="mailto:ink.leblanc@gmail.com" class="text-xl md:text-3xl font-bold hover:text-orange-200 transition break-all">
+                        ink.leblanc@gmail.com
+                    </a>
+                </div>
+                <!-- Bloc Tel -->
+                <div class="w-full md:w-auto p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 transition hover:bg-white/20">
+                    <p class="text-xs uppercase font-bold tracking-widest text-orange-200 mb-2">Téléphone</p>
+                    <a href="tel:0646297612" class="text-xl md:text-3xl font-bold hover:text-orange-200 transition">
+                        06 46 29 76 12
+                    </a>
+                </div>
             </div>
-            <form id="simple-contact" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input type="email" placeholder="ink.leblanc@gmail.com" class="flex-grow px-6 py-4 rounded-xl text-slate-800 focus:outline-none focus:ring-2 focus:ring-white" required>
-                <button type="submit" class="bg-white text-orange-600 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition shadow-xl">
-                    S'inscrire
-                </button>
-            </form>
         </div>
         <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
     </section>
 
     <footer class="py-12 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
-            <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                <i class="fas fa-dog text-orange-600"></i>
-                <span class="font-bold text-slate-900">Génération Dog-Sapiens</span>
+            <div class="flex flex-col items-center md:items-start mb-4 md:mb-0 text-center md:text-left">
+                <div class="flex items-center space-x-2 mb-2">
+                    <i class="fas fa-dog text-orange-600"></i>
+                    <span class="font-bold text-slate-900">Génération Dog-Sapiens</span>
+                </div>
+                <div class="space-y-1">
+                    <a href="mailto:ink.leblanc@gmail.com" class="block hover:text-orange-600 transition">ink.leblanc@gmail.com</a>
+                    <a href="tel:0646297612" class="block hover:text-orange-600 transition">06 46 29 76 12</a>
+                </div>
             </div>
-            <p>&copy; 2026 Thomas Le Blanc</p>
+            <p class="mt-4 md:mt-0">&copy; 2026 Thomas Le Blanc</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="hover:text-orange-600"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-orange-600"><i class="fab fa-facebook-f"></i></a>
@@ -277,13 +291,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('simple-contact').addEventListener('submit', function(e) {
-            e.preventDefault();
-            this.style.display = 'none';
-            document.getElementById('contact-success').classList.remove('hidden');
-        });
-    </script>
 </body>
 </html>
